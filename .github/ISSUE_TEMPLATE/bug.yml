@@ -1,6 +1,7 @@
 name: Bug
 description: Something produces a wrong result
 labels: ["bug"]
+projects: ["rimuru-research/1"]
 body:
   - type: textarea
     id: observed

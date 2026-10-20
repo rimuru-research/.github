@@ -1,6 +1,7 @@
 name: Experiment
 description: A measurement or study with a question, a setup, a metric and a pass threshold
 labels: ["experiment"]
+projects: ["rimuru-research/1"]
 body:
   - type: textarea
     id: question

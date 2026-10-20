@@ -13,6 +13,9 @@ Every piece of work is an issue on the project board "Rimuru Research", opened f
 | Experiment | `experiment` | a measurement or study: a question, a setup, a metric and a pass threshold |
 | Bug | `bug` | something that produces a wrong result |
 
+An issue opened from a form lands on the board by itself. A blank issue does not: add it from the Projects box on
+the issue page.
+
 An issue states its completion criteria as numbers or commands that can be rerun ("0 mismatches over the trace
 regression", "Fmax >= 300 MHz after route"), not as wording ("works", "faster"). Status on the board moves
 Todo -> In progress -> Done; an issue is closed when its criteria are met and the evidence is linked in a comment.

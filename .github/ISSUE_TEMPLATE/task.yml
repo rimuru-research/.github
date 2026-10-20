@@ -1,6 +1,7 @@
 name: Task
 description: Planned work with a deliverable
 labels: ["task"]
+projects: ["rimuru-research/1"]
 body:
   - type: textarea
     id: goal
