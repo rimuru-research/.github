@@ -1,0 +1,24 @@
+name: Bug
+description: Something produces a wrong result
+labels: ["bug"]
+body:
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed
+      description: What happened, with the exact output (log lines, mismatch counts, error text).
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce
+      description: Commit, command, configuration, seed.
+    validations:
+      required: true

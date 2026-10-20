@@ -1,0 +1,30 @@
+name: Task
+description: Planned work with a deliverable
+labels: ["task"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What this task delivers and why it is needed.
+    validations:
+      required: true
+  - type: textarea
+    id: criteria
+    attributes:
+      label: Completion criteria
+      description: Numbers or commands that can be rerun, for example "0 mismatches over the trace regression".
+      placeholder: |
+        1.
+        2.
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: Deadline
+      placeholder: YYYY-MM-DD
+  - type: textarea
+    id: deliverable
+    attributes:
+      label: Deliverable and location in the repository

@@ -1,0 +1,30 @@
+name: Experiment
+description: A measurement or study with a question, a setup, a metric and a pass threshold
+labels: ["experiment"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: The one question this experiment answers.
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Setup
+      description: Code and commit, configuration, data and sample size, tools and versions, machine.
+    validations:
+      required: true
+  - type: textarea
+    id: metric
+    attributes:
+      label: Metric and threshold
+      description: What is measured, at which level of evidence (model, simulation, post-synthesis, post-route, board), and the value that decides the answer.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Where the results go
+      placeholder: results/tables/<name>.csv, results/logs/<run>/
